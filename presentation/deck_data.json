@@ -1,0 +1,422 @@
+{
+ "kpi": {
+  "revenue_total": 36670554.0,
+  "units_total": 470762,
+  "revenue_last_28d": 6869933.0,
+  "revenue_growth_28d": 0.0011,
+  "stockout_rate": 0.0573,
+  "inventory_turnover_annualised": 66.07,
+  "inventory_value_latest": 959864.0,
+  "days_of_inventory_median": 4.6,
+  "estimated_lost_sales": 1560469.0,
+  "estimated_lost_units": 20142,
+  "date_min": "2026-04-01",
+  "date_max": "2026-08-31"
+ },
+ "growth": {
+  "S01": 0.1404,
+  "S02": 0.3048,
+  "S03": -0.076,
+  "S04": 0.0971,
+  "S05": 0.1783,
+  "S06": -0.005
+ },
+ "so": {
+  "S01": 0.0548,
+  "S02": 0.0866,
+  "S03": 0.0313,
+  "S04": 0.0554,
+  "S05": 0.0679,
+  "S06": 0.0479
+ },
+ "promo": 0.3166,
+ "weekend": 0.1456,
+ "pareto": 28,
+ "reg": {
+  "selected": "Linear Regression",
+  "selection_metric": "validation WAPE",
+  "validation": [
+   {
+    "model": "Baseline (7-day mean x 7)",
+    "split": "validation",
+    "MAE": 18.7444,
+    "RMSE": 31.9668,
+    "MAPE": 27.2112,
+    "WAPE": 23.2435,
+    "R2": 0.8562,
+    "fit_sec": 0.0
+   },
+   {
+    "model": "Linear Regression",
+    "split": "validation",
+    "MAE": 14.056,
+    "RMSE": 22.7223,
+    "MAPE": 21.036,
+    "WAPE": 17.4297,
+    "R2": 0.9273,
+    "fit_sec": 0.0936
+   },
+   {
+    "model": "Decision Tree",
+    "split": "validation",
+    "MAE": 15.8246,
+    "RMSE": 25.6981,
+    "MAPE": 23.1977,
+    "WAPE": 19.6228,
+    "R2": 0.9071,
+    "fit_sec": 0.396
+   },
+   {
+    "model": "Random Forest",
+    "split": "validation",
+    "MAE": 14.2402,
+    "RMSE": 23.4027,
+    "MAPE": 21.1311,
+    "WAPE": 17.6582,
+    "R2": 0.9229,
+    "fit_sec": 28.0511
+   },
+   {
+    "model": "XGBoost",
+    "split": "validation",
+    "MAE": 14.3873,
+    "RMSE": 23.8116,
+    "MAPE": 20.9863,
+    "WAPE": 17.8405,
+    "R2": 0.9202,
+    "fit_sec": 2.8224
+   },
+   {
+    "model": "KNN",
+    "split": "validation",
+    "MAE": 18.8852,
+    "RMSE": 29.98,
+    "MAPE": 31.4905,
+    "WAPE": 23.4181,
+    "R2": 0.8735,
+    "fit_sec": 0.0667
+   },
+   {
+    "model": "SVM (SVR, RBF)",
+    "split": "validation",
+    "MAE": 20.4615,
+    "RMSE": 46.1299,
+    "MAPE": 26.8081,
+    "WAPE": 25.3726,
+    "R2": 0.7005,
+    "fit_sec": 5.7332
+   }
+  ],
+  "test": [
+   {
+    "model": "Linear Regression",
+    "split": "test",
+    "MAE": 13.164,
+    "RMSE": 22.4142,
+    "MAPE": 21.3568,
+    "WAPE": 16.3552,
+    "R2": 0.9352
+   },
+   {
+    "model": "Baseline (7-day mean x 7)",
+    "split": "test",
+    "MAE": 17.8446,
+    "RMSE": 31.7381,
+    "MAPE": 26.2313,
+    "WAPE": 22.1705,
+    "R2": 0.87
+   }
+  ]
+ },
+ "clf": {
+  "selected": "XGBoost",
+  "selection_metric": "validation PR-AUC",
+  "threshold": 0.33000000000000007,
+  "pos_weight": 2.834,
+  "validation": [
+   {
+    "model": "Naive Bayes",
+    "split": "validation",
+    "Accuracy": 0.716,
+    "Precision": 0.4712,
+    "Recall": 0.5104,
+    "F1": 0.49,
+    "F2": 0.502,
+    "ROC_AUC": 0.7398,
+    "PR_AUC": 0.4898,
+    "fit_sec": 0.068
+   },
+   {
+    "model": "Decision Tree",
+    "split": "validation",
+    "Accuracy": 0.5926,
+    "Precision": 0.3692,
+    "Recall": 0.7402,
+    "F1": 0.4927,
+    "F2": 0.6163,
+    "ROC_AUC": 0.7005,
+    "PR_AUC": 0.4355,
+    "fit_sec": 0.4087
+   },
+   {
+    "model": "Random Forest",
+    "split": "validation",
+    "Accuracy": 0.7318,
+    "Precision": 0.498,
+    "Recall": 0.4238,
+    "F1": 0.4579,
+    "F2": 0.4368,
+    "ROC_AUC": 0.7518,
+    "PR_AUC": 0.4906,
+    "fit_sec": 37.5204
+   },
+   {
+    "model": "XGBoost",
+    "split": "validation",
+    "Accuracy": 0.6633,
+    "Precision": 0.4246,
+    "Recall": 0.7321,
+    "F1": 0.5375,
+    "F2": 0.6395,
+    "ROC_AUC": 0.7661,
+    "PR_AUC": 0.505,
+    "fit_sec": 1.9834
+   },
+   {
+    "model": "KNN",
+    "split": "validation",
+    "Accuracy": 0.7407,
+    "Precision": 0.5249,
+    "Recall": 0.3164,
+    "F1": 0.3948,
+    "F2": 0.3437,
+    "ROC_AUC": 0.733,
+    "PR_AUC": 0.4712,
+    "fit_sec": 0.0474
+   },
+   {
+    "model": "SVM (RBF)",
+    "split": "validation",
+    "Accuracy": 0.7346,
+    "Precision": 0.5077,
+    "Recall": 0.2298,
+    "F1": 0.3164,
+    "F2": 0.258,
+    "ROC_AUC": 0.7371,
+    "PR_AUC": 0.4589,
+    "fit_sec": 12.6988
+   }
+  ],
+  "test": [
+   {
+    "model": "XGBoost (calibrated)",
+    "split": "test",
+    "Accuracy": 0.7508,
+    "Precision": 0.5238,
+    "Recall": 0.604,
+    "F1": 0.561,
+    "F2": 0.5861,
+    "ROC_AUC": 0.796,
+    "PR_AUC": 0.5456,
+    "threshold": 0.33
+   }
+  ],
+  "confusion_matrix": [
+   [
+    3354,
+    821
+   ],
+   [
+    592,
+    903
+   ]
+  ]
+ },
+ "splits": {
+  "train": [
+   "2026-04-14",
+   "2026-07-08",
+   23220
+  ],
+  "valid": [
+   "2026-07-16",
+   "2026-07-27",
+   3240
+  ],
+  "test": [
+   "2026-08-04",
+   "2026-08-24",
+   5670
+  ]
+ },
+ "stats": [
+  {
+   "q": "Do promotions significantly increase sales?",
+   "t": "Wilcoxon signed-rank",
+   "p": 6.080637821447929e-42,
+   "e": "Median lift per store-product: +30.8% (n = 264 pairs)"
+  },
+  {
+   "q": "Does mean demand differ across store types?",
+   "t": "Kruskal-Wallis H test",
+   "p": 5.737409109593055e-164,
+   "e": "Mean daily units per store: {'Express': 278.0, 'Hypermarket': 1125.0, 'Supermarket': 465.0}"
+  },
+  {
+   "q": "Is stock-out frequency associated with promotion status?",
+   "t": "Chi-square test of independence",
+   "p": 2.6739070622671274e-05,
+   "e": "Stock-out rate: 7.2% on promotion days vs 5.6% otherwise (Cramer's V = 0.021)"
+  },
+  {
+   "q": "Is weekend demand higher than weekday demand?",
+   "t": "Paired t-test",
+   "p": 5.920315514969091e-19,
+   "e": "Average weekend uplift: +14.3%"
+  }
+ ],
+ "dq_issues": 15,
+ "dq_rows": 14205,
+ "dq_top": [
+  [
+   "transactions",
+   "Payment mode case inconsistency",
+   5031
+  ],
+  [
+   "transactions",
+   "Store IDs with lower-case / trailing spaces",
+   2516
+  ],
+  [
+   "transactions",
+   "Non-ISO date format (dd-mm-yyyy)",
+   2514
+  ],
+  [
+   "transactions",
+   "Duplicate rows (same transaction_id repeated)",
+   2013
+  ],
+  [
+   "transactions",
+   "Missing selling_price",
+   1007
+  ],
+  [
+   "inventory",
+   "closing != opening + received - sold",
+   472
+  ]
+ ],
+ "risk": {
+  "LOW": 159,
+  "HIGH": 97,
+  "MEDIUM": 26
+ },
+ "units": 13092,
+ "lines": 209,
+ "rar": 581705.0,
+ "exv": 17074.0,
+ "nover": 24,
+ "rule": 96,
+ "top": [
+  [
+   "S02",
+   "Milk 1L",
+   268,
+   786,
+   "100%",
+   144
+  ],
+  [
+   "S02",
+   "Detergent 1kg",
+   0,
+   202,
+   "95%",
+   288
+  ],
+  [
+   "S02",
+   "Basmati Rice 1kg",
+   0,
+   210,
+   "95%",
+   270
+  ],
+  [
+   "S02",
+   "Sunflower Oil 1L",
+   0,
+   180,
+   "95%",
+   252
+  ],
+  [
+   "S02",
+   "Toor Dal 1kg",
+   0,
+   120,
+   "95%",
+   174
+  ],
+  [
+   "S02",
+   "Paneer 200g",
+   0,
+   212,
+   "95%",
+   246
+  ]
+ ],
+ "card": {
+  "store_id": "S02",
+  "product_name": "Milk 1L",
+  "current_stock": 268,
+  "forecast_7d": 786.4,
+  "stockout_probability": 1.0,
+  "model_probability": 1.0,
+  "risk_level": "HIGH",
+  "safety_stock": 74.0,
+  "recommended_stock": 412.0,
+  "reorder_qty": 144,
+  "manager_action": "Raise replenishment order today; split into daily drops (short shelf life)",
+  "reasons": "[[\"Low stock cover vs demand\", \"+22 pts risk\"], [\"Repeated recent stock-outs\", \"+22 pts risk\"]]",
+  "lead_time_days": 1,
+  "shelf_life_days": 3.0
+ },
+ "whatif": [
+  [
+   "Today",
+   97,
+   13092
+  ],
+  [
+   "10% promo",
+   106,
+   13986
+  ],
+  [
+   "20% promo",
+   112,
+   14664
+  ],
+  [
+   "Festival",
+   103,
+   13896
+  ],
+  [
+   "Supplier +2 days",
+   156,
+   14676
+  ],
+  [
+   "All three",
+   178,
+   17136
+  ]
+ ],
+ "asof": "2026-08-31"
+}

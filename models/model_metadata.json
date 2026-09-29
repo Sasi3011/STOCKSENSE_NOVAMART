@@ -1,0 +1,317 @@
+{
+ "regression": {
+  "selected": "Linear Regression",
+  "selection_metric": "validation WAPE",
+  "validation": [
+   {
+    "model": "Baseline (7-day mean x 7)",
+    "split": "validation",
+    "MAE": 18.7444,
+    "RMSE": 31.9668,
+    "MAPE": 27.2112,
+    "WAPE": 23.2435,
+    "R2": 0.8562,
+    "fit_sec": 0.0
+   },
+   {
+    "model": "Linear Regression",
+    "split": "validation",
+    "MAE": 14.056,
+    "RMSE": 22.7223,
+    "MAPE": 21.036,
+    "WAPE": 17.4297,
+    "R2": 0.9273,
+    "fit_sec": 0.4615
+   },
+   {
+    "model": "Decision Tree",
+    "split": "validation",
+    "MAE": 15.8246,
+    "RMSE": 25.6981,
+    "MAPE": 23.1977,
+    "WAPE": 19.6228,
+    "R2": 0.9071,
+    "fit_sec": 0.7909
+   },
+   {
+    "model": "Random Forest",
+    "split": "validation",
+    "MAE": 14.2402,
+    "RMSE": 23.4027,
+    "MAPE": 21.1311,
+    "WAPE": 17.6582,
+    "R2": 0.9229,
+    "fit_sec": 5.8876
+   },
+   {
+    "model": "XGBoost",
+    "split": "validation",
+    "MAE": 14.3032,
+    "RMSE": 23.7568,
+    "MAPE": 20.7444,
+    "WAPE": 17.7363,
+    "R2": 0.9206,
+    "fit_sec": 1.9548
+   },
+   {
+    "model": "KNN",
+    "split": "validation",
+    "MAE": 18.8852,
+    "RMSE": 29.98,
+    "MAPE": 31.4905,
+    "WAPE": 23.4181,
+    "R2": 0.8735,
+    "fit_sec": 0.079
+   },
+   {
+    "model": "SVM (SVR, RBF)",
+    "split": "validation",
+    "MAE": 20.4615,
+    "RMSE": 46.1299,
+    "MAPE": 26.8081,
+    "WAPE": 25.3726,
+    "R2": 0.7005,
+    "fit_sec": 4.9788
+   }
+  ],
+  "test": [
+   {
+    "model": "Linear Regression",
+    "split": "test",
+    "MAE": 13.164,
+    "RMSE": 22.4142,
+    "MAPE": 21.3568,
+    "WAPE": 16.3552,
+    "R2": 0.9352
+   },
+   {
+    "model": "Baseline (7-day mean x 7)",
+    "split": "test",
+    "MAE": 17.8446,
+    "RMSE": 31.7381,
+    "MAPE": 26.2313,
+    "WAPE": 22.1705,
+    "R2": 0.87
+   }
+  ]
+ },
+ "classification": {
+  "selected": "XGBoost",
+  "selection_metric": "validation PR-AUC",
+  "threshold": 0.3600000000000001,
+  "pos_weight": 2.834,
+  "validation": [
+   {
+    "model": "Naive Bayes",
+    "split": "validation",
+    "Accuracy": 0.716,
+    "Precision": 0.4712,
+    "Recall": 0.5104,
+    "F1": 0.49,
+    "F2": 0.502,
+    "ROC_AUC": 0.7398,
+    "PR_AUC": 0.4898,
+    "fit_sec": 0.082
+   },
+   {
+    "model": "Decision Tree",
+    "split": "validation",
+    "Accuracy": 0.5926,
+    "Precision": 0.3692,
+    "Recall": 0.7402,
+    "F1": 0.4927,
+    "F2": 0.6163,
+    "ROC_AUC": 0.7005,
+    "PR_AUC": 0.4355,
+    "fit_sec": 0.3838
+   },
+   {
+    "model": "Random Forest",
+    "split": "validation",
+    "Accuracy": 0.7244,
+    "Precision": 0.4816,
+    "Recall": 0.4088,
+    "F1": 0.4422,
+    "F2": 0.4215,
+    "ROC_AUC": 0.7478,
+    "PR_AUC": 0.4887,
+    "fit_sec": 7.0134
+   },
+   {
+    "model": "XGBoost",
+    "split": "validation",
+    "Accuracy": 0.6815,
+    "Precision": 0.4415,
+    "Recall": 0.724,
+    "F1": 0.5486,
+    "F2": 0.6419,
+    "ROC_AUC": 0.7661,
+    "PR_AUC": 0.4984,
+    "fit_sec": 2.1575
+   },
+   {
+    "model": "KNN",
+    "split": "validation",
+    "Accuracy": 0.7407,
+    "Precision": 0.5249,
+    "Recall": 0.3164,
+    "F1": 0.3948,
+    "F2": 0.3437,
+    "ROC_AUC": 0.733,
+    "PR_AUC": 0.4712,
+    "fit_sec": 0.0923
+   },
+   {
+    "model": "SVM (RBF)",
+    "split": "validation",
+    "Accuracy": 0.7346,
+    "Precision": 0.5077,
+    "Recall": 0.2298,
+    "F1": 0.3164,
+    "F2": 0.258,
+    "ROC_AUC": 0.7371,
+    "PR_AUC": 0.4589,
+    "fit_sec": 11.059
+   }
+  ],
+  "test": [
+   {
+    "model": "XGBoost (calibrated)",
+    "split": "test",
+    "Accuracy": 0.722,
+    "Precision": 0.4806,
+    "Recall": 0.6696,
+    "F1": 0.5595,
+    "F2": 0.6207,
+    "ROC_AUC": 0.7927,
+    "PR_AUC": 0.5424,
+    "threshold": 0.36
+   }
+  ],
+  "confusion_matrix": [
+   [
+    3093,
+    1082
+   ],
+   [
+    494,
+    1001
+   ]
+  ]
+ },
+ "importance": {
+  "demand": {
+   "reorder_gap": 58.6225,
+   "projected_stock_at_lead": 48.3167,
+   "rolling_mean_28": 28.0322,
+   "current_stock": 9.4112,
+   "rolling_mean_7": 8.813,
+   "store_type": 6.1307,
+   "floor_area_sqft": 4.4908,
+   "region": 4.0176,
+   "inventory_to_demand_ratio": 0.9204,
+   "rolling_std_28": 0.7401,
+   "avg_daily_customers": 0.7001,
+   "rolling_std_7": 0.537,
+   "rolling_mean_14": 0.4898,
+   "last_receipt_cover": 0.4256,
+   "cover_minus_lead": 0.3271,
+   "price_change": 0.2949,
+   "days_of_inventory": 0.2385,
+   "sales_growth_7v28": 0.2291,
+   "days_since_last_receipt": 0.1961,
+   "projected_stock_7d": 0.1432
+  },
+  "stockout": {
+   "lag_1": 0.0406,
+   "last_receipt_cover": 0.04,
+   "region": 0.0296,
+   "projected_stock_7d": 0.0288,
+   "days_of_inventory": 0.0247,
+   "rolling_std_7": 0.0232,
+   "cover_minus_lead": 0.0208,
+   "rolling_std_28": 0.0177,
+   "rolling_mean_28": 0.0164,
+   "avg_daily_customers": 0.0134,
+   "mrp": 0.0124,
+   "store_type": 0.008,
+   "price_change": 0.0078,
+   "stockout_days_last_14": 0.0054,
+   "floor_area_sqft": 0.005,
+   "temp_c": 0.0048,
+   "temp_mean_7": 0.0045,
+   "margin_pct": 0.0038,
+   "received_last_7": 0.0037,
+   "reorder_gap": 0.0035
+  }
+ },
+ "splits": {
+  "train": [
+   "2026-04-14",
+   "2026-07-08",
+   23220
+  ],
+  "valid": [
+   "2026-07-16",
+   "2026-07-27",
+   3240
+  ],
+  "test": [
+   "2026-08-04",
+   "2026-08-24",
+   5670
+  ]
+ },
+ "features": [
+  "day_of_week",
+  "weekend_flag",
+  "month",
+  "week_no",
+  "festival_flag",
+  "holiday_flag",
+  "festival_next_7",
+  "holiday_next_7",
+  "weekend_days_next_7",
+  "lag_1",
+  "lag_7",
+  "lag_14",
+  "rolling_mean_7",
+  "rolling_mean_14",
+  "rolling_mean_28",
+  "rolling_std_7",
+  "rolling_std_28",
+  "sales_growth_7v28",
+  "cv_28",
+  "current_stock",
+  "days_of_inventory",
+  "inventory_to_demand_ratio",
+  "reorder_gap",
+  "below_reorder_flag",
+  "received_last_7",
+  "stockout_days_last_14",
+  "stockout_days_last_28",
+  "lead_time_days",
+  "days_since_last_receipt",
+  "last_receipt_cover",
+  "cover_minus_lead",
+  "projected_stock_at_lead",
+  "projected_stock_7d",
+  "promotion_flag",
+  "discount_pct",
+  "promo_days_last_7",
+  "price_change",
+  "temp_c",
+  "temp_mean_7",
+  "rain_mm",
+  "local_event",
+  "avg_daily_customers",
+  "floor_area_sqft",
+  "shelf_life_days",
+  "mrp",
+  "margin_pct",
+  "history_days",
+  "store_type",
+  "category",
+  "region"
+ ]
+}

@@ -1,0 +1,50 @@
+[
+ {
+  "question": "Do promotions significantly increase sales?",
+  "h0": "Median daily units are the same on promotion and non-promotion days.",
+  "h1": "Median daily units are higher on promotion days.",
+  "test": "Wilcoxon signed-rank (one-sided), paired by store x product",
+  "why_test": "Daily units are skewed counts, so a non-parametric paired test is safer than a t-test; pairing controls for product size.",
+  "statistic": 34050.0,
+  "p_value": 6.080637821447929e-42,
+  "significant": true,
+  "effect": "Median lift per store-product: +30.8% (n = 264 pairs)",
+  "interpretation": "Promotions lift units by about 31% for the typical item. Promotion calendars must feed the replenishment plan, otherwise promotions create their own stock-outs."
+ },
+ {
+  "question": "Does mean demand differ across store types?",
+  "h0": "Daily store demand has the same distribution for Express, Supermarket and Hypermarket.",
+  "h1": "At least one store type differs.",
+  "test": "Kruskal-Wallis H test (ANOVA checked as well)",
+  "why_test": "Levene's test p = 2.6e-59 shows unequal variances, which breaks an ANOVA assumption; Kruskal-Wallis does not need equal variances.",
+  "statistic": 751.7539,
+  "p_value": 5.737409109593055e-164,
+  "significant": true,
+  "effect": "Mean daily units per store: {'Express': 278.0, 'Hypermarket': 1125.0, 'Supermarket': 465.0}",
+  "interpretation": "Store formats behave very differently, so one national reorder rule is wrong. Store type is kept as a model feature and safety stock is set per store."
+ },
+ {
+  "question": "Is stock-out frequency associated with promotion status?",
+  "h0": "Stock-out occurrence is independent of whether a promotion is running.",
+  "h1": "Stock-out occurrence depends on promotion status.",
+  "test": "Chi-square test of independence (2 x 2)",
+  "why_test": "Both variables are binary categories; expected counts are all well above 5.",
+  "statistic": 17.6366,
+  "p_value": 2.6739070622671274e-05,
+  "significant": true,
+  "effect": "Stock-out rate: 7.2% on promotion days vs 5.6% otherwise (Cramer's V = 0.021)",
+  "interpretation": "Promotion days are more likely to end with an empty shelf. The association is statistically clear but small on its own (low Cramer's V), which tells us promotions matter mostly in combination with low stock cover - exactly what a multivariate stock-out model captures. The promotion flag is kept as a model input."
+ },
+ {
+  "question": "Is weekend demand higher than weekday demand?",
+  "h0": "Mean daily units on weekends equal weekday units for the same item.",
+  "h1": "Weekend units are higher.",
+  "test": "Paired t-test (one-sided) on store x product means",
+  "why_test": "Each pair is an average of many days, so means are close to normal (CLT); pairing removes product size.",
+  "statistic": 9.4719,
+  "p_value": 5.920315514969091e-19,
+  "significant": true,
+  "effect": "Average weekend uplift: +14.3%",
+  "interpretation": "Orders placed on Thursday should cover a heavier weekend; the 7-day forecast includes day-of-week features for this."
+ }
+]

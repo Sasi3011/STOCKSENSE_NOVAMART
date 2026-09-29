@@ -1,0 +1,48 @@
+product_id,category,sub_category,brand,product_name,mrp,cost_price,shelf_life_days,supplier_id
+P101,Dairy,Milk,Aavin,Milk 1L,60,52,3.0,SUP01
+P102,Dairy,Curd,Aavin,Curd 500g,40,31,5.0,SUP01
+P103,dairy,Paneer,Milky Mist,Paneer 200g,95,72,10.0,SUP02
+P104,Dairy,Butter,Amul,Butter 100g,58,47,180.0,SUP02
+P105,DAIRY,Cheese,Amul,Cheese Slices 200g,145,112,180.0,SUP02
+P106,Dairy,Ghee,Aavin,Ghee 500ml,340,285,270.0,SUP01
+P110,Groceries,Bread,Britannia,Bread 400g,45,34,4.0,SUP03
+P111,GROCERIES,Rice,India Gate,Basmati Rice 1kg,165,128,540.0,SUP05
+P112,Groceries,Atta,Aashirvaad,Atta 5kg,285,238,120.0,SUP05
+P113,Groceries,Oil,Gold Winner,Sunflower Oil 1L,155,131,270.0,SUP05
+P114,Groceries,Dal,Tata Sampann,Toor Dal 1kg,180,149,365.0,SUP05
+P115,Groceries,Sugar,Parrys,Sugar 1kg,52,44,365.0,SUP05
+P116,Groceries,Eggs,Suguna,Eggs 6pc,48,38,14.0,SUP03
+P117,Groceries,Salt,Tata,Salt 1kg,28,21,730.0,SUP05
+P330,BEVERAGES,Soft Drink,FizzUp,Cola 750ml,50,31,180.0,SUP04
+P331,beverage,Soft Drink,FizzUp,Lemon Soda 600ml,40,25,180.0,SUP04
+P332,Beverages,Juice,Real,Mango Juice 1L,110,78,240.0,SUP04
+P333,Beverages,Water,Aquafina,Water 1L,20,11,365.0,SUP04
+P334,Beverages,Tea,3 Roses,Tea 250g,145,112,365.0,SUP07
+P335,Beverages,Coffee,Narasus,Filter Coffee 200g,135,101,365.0,SUP07
+P336,Beverages ,Energy,Voltz,Energy Drink 250ml,99,64,365.0,SUP04
+P440,SNACKS,Chips,Crunchy,Potato Chips 90g,30,19,120.0,SUP06
+P441,Snacks,Namkeen,Haldiram,Mixture 200g,55,38,150.0,SUP06
+P442,SNACKS,Biscuits,Crispo,Cream Biscuits 150g,35,22,,SUP06
+P443,Snacks,Chocolate,Cocoa Bay,Milk Chocolate 50g,45,30,300.0,SUP06
+P444,snack,Noodles,Yippee,Instant Noodles 4pk,56,42,270.0,SUP06
+P445,snack,Cookies,Crispo,Butter Cookies 200g,60,40,240.0,SUP06
+P205,Personal Care,Shampoo,GlowCare,Shampoo 180ml,120,79,730.0,SUP08
+P206,Personal Care,Soap,Medimix,Bath Soap 4pk,140,98,730.0,SUP08
+P207,Personal Care,Toothpaste,Colgate,Toothpaste 150g,99,70,540.0,SUP08
+P208,Personal Care,Hair Oil,Parachute,Coconut Hair Oil 200ml,105,74,540.0,SUP08
+P209,personal care,Face Wash,GlowCare,Face Wash 100ml,150,96,540.0,SUP08
+P210,Personal Care,Deodorant,Zest,Deodorant 150ml,199,128,730.0,SUP08
+P520,Household,Detergent,Surf,Detergent 1kg,145,112,730.0,SUP09
+P521,Household,Dishwash,Vim,Dishwash Bar 3pk,60,44,730.0,SUP09
+P522,household,Floor Cleaner,Lizol,Floor Cleaner 1L,210,158,,SUP09
+P523,Household,Tissue,Origami,Tissue Roll 4pk,180,126,1095.0,SUP09
+P524,household,Agarbatti,Cycle,Agarbatti 100g,65,41,1095.0,SUP09
+P525,household,Mosquito,GoodKnight,Mosquito Refill,85,61,730.0,SUP09
+P630,Frozen,Ice Cream,Arun,Vanilla Ice Cream 1L,190,128,180.0,SUP10
+P631,Frozen,Ice Cream,Arun,Choco Bar,30,18,180.0,SUP10
+P632,frozen,Frozen Veg,Safal,Green Peas 500g,95,70,365.0,SUP10
+P633,frozen,Ready Snack,McCain,French Fries 420g,145,104,365.0,SUP10
+P634,Frozen,Frozen Meat,Licious,Chicken Nuggets 250g,199,150,180.0,SUP10
+P635,Frozen,Kulfi,Arun,Kulfi Stick,25,15,180.0,SUP10
+P160,Beverages,Juice,Real,Guava Juice 1L,110,79,240.0,SUP04
+P161,Snacks,Protein Bar,Yoga Bar,Protein Bar 60g,80,52,180.0,SUP06
